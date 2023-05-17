@@ -9,7 +9,22 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ffffff",
+      "plagins":[
+        {
+          "expo": {
+            "plugins": [
+              [
+                "expo-camera",{
+                },
+                {
+                  "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera."
+                }
+              ]
+            ]
+          }
+        }
+      ]
     },
     "assetBundlePatterns": [
       "**/*"
@@ -20,7 +35,8 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffffff" 
+       
       }
     },
     "web": {
